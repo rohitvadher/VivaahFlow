@@ -3,7 +3,7 @@
 ### Wedding Services & Event Management System
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php\&logoColor=white)](https://www.php.net/)
-[![MariaDB](https://img.shields.io/badge/MariaDB-10.4%2B-003545?logo=mariadb\&logoColor=white)](https://mariadb.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap\&logoColor=white)](https://getbootstrap.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
