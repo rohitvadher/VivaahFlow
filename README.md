@@ -53,7 +53,7 @@
 ## Requirements
 
 * PHP 8.2+
-* MariaDB 10.4+ / MySQL
+* MariaDB 10.4+ / MySQL 5.7+
 * Apache or PHP built-in server
 * `pdo_mysql`, `mbstring`, `fileinfo`
 * Modern desktop browser
