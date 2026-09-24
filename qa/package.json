@@ -1,0 +1,1 @@
+{"name":"vivaahflow-qa","version":"1.0.0","private":true,"description":"VivaahFlow deep browser QA harness (NOT part of the application)","type":"commonjs","scripts":{"test":"node run-all.js"},"dependencies":{"playwright":"^1.49.0"}}

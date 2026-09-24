@@ -1,0 +1,11 @@
+# VivaahFlow uploads: media only. Never execute scripts from here,
+# even if an attacker bypasses application-side validation.
+Options -Indexes -ExecCGI
+RemoveHandler .php .phtml .phar .cgi .pl
+RemoveType .php .phtml .phar
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<FilesMatch "\.(php|phtml|phar|cgi|pl|sh)$">
+    Require all denied
+</FilesMatch>

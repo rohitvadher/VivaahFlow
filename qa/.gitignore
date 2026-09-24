@@ -1,0 +1,12 @@
+# QA runtime artifacts — never commit these.
+# (reports/ IS committed: the release QA report MD + PDF are deliverables.)
+tests/
+screenshots/
+traces/
+artifacts/
+node_modules/
+package-lock.json
+playwright-report/
+test-results/
+*.har
+.DS_Store

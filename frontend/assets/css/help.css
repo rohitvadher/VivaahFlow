@@ -1,0 +1,231 @@
+.help-search {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.help-index {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+    padding: 12px;
+    background: var(--ink-50);
+    border: 1px solid var(--ink-100);
+    border-radius: var(--radius);
+}
+
+.help-index-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-500);
+    margin-right: 4px;
+}
+
+.help-index a {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--ink-700);
+    border: 1px solid var(--ink-200);
+    font-weight: 600;
+}
+
+.help-index a:hover {
+    border-color: var(--brand-300);
+    color: var(--brand-700);
+    background: var(--brand-50);
+}
+
+.help-card {
+    margin-bottom: 22px;
+    scroll-margin-top: 16px;
+}
+
+.help-card-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.help-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    border-radius: 12px;
+    background: var(--brand-50);
+    color: var(--brand-600);
+}
+
+.help-icon i {
+    width: 20px;
+    height: 20px;
+}
+
+.help-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+.help-item {
+    border: 1px solid var(--ink-100);
+    border-radius: var(--radius-sm);
+    background: #fff;
+}
+
+.help-q {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink-800);
+    border-radius: var(--radius-sm);
+    user-select: none;
+}
+
+.help-q:hover {
+    background: var(--ink-50);
+}
+
+.help-q-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    flex: none;
+    border-radius: 8px;
+    color: var(--brand-600);
+    background: var(--brand-50);
+}
+
+.help-q-icon i {
+    width: 15px;
+    height: 15px;
+}
+
+.help-a {
+    display: none;
+    padding: 4px 16px 16px 54px;
+    color: var(--ink-600);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.help-item.is-open .help-a {
+    display: block;
+}
+
+.help-item.is-open .help-q {
+    color: var(--brand-700);
+}
+
+.help-steps {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.help-flow {
+    gap: 10px;
+    counter-reset: help-step;
+}
+
+.help-steps li {
+    padding-left: 4px;
+}
+
+.help-flow li {
+    padding: 10px 14px;
+    background: var(--brand-50);
+    border-radius: var(--radius-sm);
+    counter-increment: help-step;
+    list-style: none;
+    position: relative;
+}
+
+.help-flow li::before {
+    content: counter(help-step);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--brand-600);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.help-table {
+    margin: 0;
+}
+
+.help-table td,
+.help-table th {
+    padding: 9px 12px;
+    font-size: 13.5px;
+    border-bottom: 1px solid var(--ink-100);
+    text-align: left;
+    vertical-align: top;
+}
+
+.help-table-label {
+    width: 38%;
+    font-weight: 600;
+    color: var(--brand-700);
+    white-space: normal;
+}
+
+.help-tasks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.help-task {
+    border: 1px solid var(--ink-100);
+    border-radius: var(--radius-sm);
+    background: #fff;
+}
+
+.help-task .help-task-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink-800);
+    border-radius: var(--radius-sm);
+}
+
+.help-task .help-task-head:hover {
+    background: var(--ink-50);
+}
+
+.help-task .help-a {
+    padding: 4px 14px 14px 52px;
+}
+
+@media (max-width: 900px) {
+    .help-tasks {
+        grid-template-columns: 1fr;
+    }
+}
