@@ -25,6 +25,20 @@
 * REST API
 * Demo data support
 
+## Screenshots
+
+### Home
+
+![VivaahFlow Home](docs/screenshots/home.png)
+
+### Services
+
+![VivaahFlow Services](docs/screenshots/services.png)
+
+### Gallery
+
+![VivaahFlow Gallery](docs/screenshots/gallery.png)
+
 ## Tech Stack
 
 | Layer    | Technology                   |
@@ -60,18 +74,6 @@ http://localhost/VivaahFlow
 ```
 
 The setup wizard will guide you through the initial installation.
-
-### PHP Built-in Server
-
-```bash
-php -S 127.0.0.1:8100 router.php
-```
-
-Open:
-
-```text
-http://127.0.0.1:8100
-```
 
 ## Database
 
